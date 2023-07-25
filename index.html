@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0520837556.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/images-removebg-preview.png" cless="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Priya Singh</span><br> From Lucknow Uttar Pradesh.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ********************************    ABOUT    ****************************** -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/image1 (1).jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me </h1>
+                    <p>
+                        I am a dedicated B.Tech. Computer Science student at Lovely Professional University.
+                        Proficient in C++, HTML, CSS, JavaScript, and various web technologies, I have developed a scalable
+                        admin dashboard in React.js with advanced features like data visualization and real-time
+                        updates.
+                        With experience in e-commerce website development using React.js, Node.js, and MongoDB,
+                        I excel in frontend components and middleware management. Applying object-oriented
+                        programming concepts in C++, I have built a student data management system.
+                        Achieving a 5-star rating in C++ with DSA on HackerRank and solving over 100 problems on
+                        LeetCode showcase my problem-solving abilities. As a Lance Corporal in the NCC and CEO of
+                        Variants student organization, I exhibit strong leadership,time management and teamwork skills.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('Projects', event)">Projects</p>
+                        <p class="tab-links" onclick="opentab('Education', event)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages:</span><br>C++, Javascript.</li>
+                            <li><span>Web-Technologies:</span><br>HTML, CSS, Nodejs, React.js, Express.js, RESTful, API, EJS.
+                            </li>
+                            <li><span>Data Management:</span><br>MongoDB, MySQL.</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Projects">
+                        <ul>
+                            <li><span>Admin-Dashboard</span><br>C++, OOPS, React.js, D3.js, Chart.js, JWT, RBAC.</li>
+                            <li><span>Portfolio:</span><br>HTML, CSS, JavaScript.</li>
+                            <li><span>Git-Profile-Finder:</span><br>HTML, CSS, JAVASCRIPT, REACT.</li>
+                            <li><span>Student Data Management System:</span><br>C++</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2020 to Present</span><br>Btech in (Computer Science Engineering) at LPU</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ****************************** SERVICES ********************************** -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design is the planning and creation of websites.
+                        This includes a number of separate skills that all fall under the umbrella of web design.
+                        Some examples of these skills are information architecture, user interface, site structure,
+                        navigation, layout, colors, fonts, and overall imagery. </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-calendar"></i>
+                    <h2>Event Management</h2>
+                    Event Management is the process of analyzing, planning, marketing, producing and evaluating an
+                    event. It is a different way of promoting a product, service or idea. If an event is managed
+                    efficiently and effectively, it can be used as a very powerful promotional tool to launch or market
+                    a product or service.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fas fa-chart-line"></i>
+                    <h2>Graphic Design</h2>
+                    <p>Graphic design can be physical, digital and anywhere in-between. Because of this abstractness and
+                        versatility, graphic design goes far beyond simply combining text and pictures. Graphic design
+                        focuses on communicating a message visually. Each project a graphic designer works on will have
+                        a unique message and a desired result from that message.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ************************************** My-Skills ************************************ -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/dashboard-project.png">
+                    <div class="layer">
+                        <h3>Admin Dashboard</h3>
+                        <p>Developed secure React.js admin dashboard with data visualization, real-time updates, JWT
+                            authentication, and RBAC.</p>
+                        <a href="https://react-dashboard-2406.netlify.app"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Portfolio-project1.png">
+                    <div class="layer">
+                        <h3>Portfolio</h3>
+                        <p>Made a responsive personal Portfolio using HTML,CSS and JAVASCRIPT</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                 <div class="work">
+                    <img src="images/git-profile-finder.png">
+                    <div class="layer">
+                        <h3>Git-Profile-Finder</h3>
+                        <p>Made a responsive git-profile-finder using HTML, CSS,JAVASCRIPT and REACT </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/studentDMS.jpeg">
+                    <div class="layer">
+                        <h3>Student Data Management System</h3>
+                        <p>Made a practical application of Student Data Management System.as a part of summer training
+                            program USING C++ and DSA</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- **************************** Contact ******************************** -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me </h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>priyabhadoriya2406@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>8318543824</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/profile.php?id=100006091861912"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/singhpriya_14072011/"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/priya-singh2406/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/priya_cv_final.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form class="submit-to-google-sheet" id="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Priya created with <i class="fa-solid fa-heart"></i></p>
+            </div>
+        </div>
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname, event) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwPI0DH1xtPuanmid3-Y4skddUeOMYw0XiPCUPaBrheUhoTBJnmalX-0a9qXVJEQhoiiQ/exec'
+            const form = document.forms['submit-to-google-sheet'];
+            const msg = document.getElementById("msg")
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => {
+                        msg.innerHTML = "Message sent Successfully"
+                        setTimeout(function () {
+                            msg.innerHTML = ""
+                        }, 5000)
+                        form.reset()
+                    })
+                    .catch(error => console.error('Error!', error.message))
+            });
+        </script>
+
+</body>
+
+</html>
